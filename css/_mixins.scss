@@ -1,0 +1,44 @@
+@use 'variables' as v;
+
+@mixin container{
+    max-width: v.$container-width;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin bg-img($img) {
+    background-image: url('../img/#{$img}');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+    &:hover{
+        background-size: 110%;
+        filter: grayscale(0%);
+        background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5,)),url('../img/#{$img}');
+    }
+}
+
+@mixin mobile1{
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+@mixin mobile2{
+    @media screen and (max-width: 750px) {
+        @content;
+    }
+}
+@mixin mobile3{
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+

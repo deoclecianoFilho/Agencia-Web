@@ -24,6 +24,8 @@ header .container {
   margin: 0 auto;
 }
 header .container .menu-topo .logo {
+  position: relative;
+  z-index: 2;
   background-image: url("../img/logo.png");
   background-size: 100% 100%;
   float: left;
@@ -33,34 +35,81 @@ header .container .menu-topo .logo {
 header .container .menu-topo .desktop {
   float: right;
 }
+@media screen and (max-width: 750px) {
+  header .container .menu-topo .desktop {
+    display: none;
+  }
+}
 header .container .menu-topo .desktop ul li {
   display: inline-block;
   margin: 0 15px;
   border-radius: 20px;
 }
 header .container .menu-topo .desktop ul li a {
-  color: white;
+  color: #fff;
 }
 header .container .menu-topo .desktop ul .btn-nav {
   padding: 3px 8px;
-  border: 1px solid white;
+  border: 1px solid #fff;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 }
 header .container .menu-topo .mobile {
+  float: right;
   display: none;
+}
+header .container .menu-topo .mobile h3 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  cursor: pointer;
+  font-size: 26px;
+}
+header .container .menu-topo .mobile ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 70px 0 30px 0;
+  top: 0;
+  background-color: #31475e;
+  display: none;
+  text-align: center;
+}
+header .container .menu-topo .mobile ul li {
+  padding: 10px 0;
+}
+header .container .menu-topo .mobile ul li a {
+  display: block;
+  color: #fff;
+}
+header .container .menu-topo .mobile ul .btn-nav {
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: inline-block;
+  padding: 4px 10px;
+}
+@media screen and (max-width: 750px) {
+  header .container .menu-topo .mobile {
+    display: block;
+  }
 }
 header .container .chamada-header {
   padding: 110px 0;
 }
+@media screen and (max-width: 750px) {
+  header .container .chamada-header {
+    text-align: center;
+  }
+}
 header .container .chamada-header h2 {
   font-size: 47px;
-  color: white;
+  color: #fff;
   font-weight: normal;
 }
 header .container .chamada-header p {
   font-size: 17px;
-  color: white;
+  color: #fff;
   margin-top: 10px;
   max-width: 600px;
 }
@@ -70,18 +119,36 @@ header .container .chamada-header form {
 header .container .chamada-header form input[type=email] {
   display: inline-block;
   border-radius: 20px;
-  background-color: white;
+  background-color: #fff;
   height: 35px;
   width: 237px;
   padding-left: 10px;
   outline: 0;
+  border: 0;
+}
+@media screen and (max-width: 750px) {
+  header .container .chamada-header form input[type=email] {
+    margin-bottom: 10px;
+  }
 }
 header .container .chamada-header form input[type=submit] {
   width: 181px;
   height: 43px;
   border-radius: 20px;
   background-color: #ff5f27;
-  color: white;
+  color: #fff;
   cursor: pointer;
   border: 0;
+}
+
+.descricao-danki {
+  text-align: center;
+  padding: 30px 0;
+}
+.descricao-danki .container p {
+  display: inline-block;
+  max-width: 600px;
+  font-weight: lighter;
+  font-size: 22px;
+  font-style: italic;
 }/*# sourceMappingURL=index.css.map */
