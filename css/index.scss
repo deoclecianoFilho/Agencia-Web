@@ -10,6 +10,10 @@
     list-style-type: none;
 }
 
+.container{
+    @include m.container
+}
+
 .clear{clear: both;}
 
 header{
@@ -153,4 +157,51 @@ header{
         }
     }
 }
-.descricao-danki2{}
+.descricao-danki2{
+    padding: 50px 0;
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 960px;
+        .texto-descricao{
+            float: left;
+            width: 40%;
+            h3{
+                color: v.$text2;
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: normal;
+            }
+            p{
+                margin-top: 15px;
+                color: v.$text3;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            @include m.mobile2{
+                width: 80%;
+                margin: auto;
+            }
+        }
+        img{
+            width: 60%;
+            float: left;
+            max-width: 500px;
+            @include m.mobile2{
+                width: 100%;
+                margin:10px auto;
+                float: none;
+            }
+        }
+    }
+}
+.descricao-danki3{
+    .container{
+        .box-depoimento{
+            p{
+
+            }
+        }
+    }
+}

@@ -7,6 +7,12 @@
   list-style-type: none;
 }
 
+.container {
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+
 .clear {
   clear: both;
 }
@@ -151,4 +157,48 @@ header .container .chamada-header form input[type=submit] {
   font-weight: lighter;
   font-size: 22px;
   font-style: italic;
+}
+
+.descricao-danki2 {
+  padding: 50px 0;
+}
+.descricao-danki2 .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 960px;
+}
+.descricao-danki2 .container .texto-descricao {
+  float: left;
+  width: 40%;
+}
+.descricao-danki2 .container .texto-descricao h3 {
+  color: #31475e;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: normal;
+}
+.descricao-danki2 .container .texto-descricao p {
+  margin-top: 15px;
+  color: #6a7c92;
+  font-size: 15px;
+  line-height: 25px;
+}
+@media screen and (max-width: 750px) {
+  .descricao-danki2 .container .texto-descricao {
+    width: 80%;
+    margin: auto;
+  }
+}
+.descricao-danki2 .container img {
+  width: 60%;
+  float: left;
+  max-width: 500px;
+}
+@media screen and (max-width: 750px) {
+  .descricao-danki2 .container img {
+    width: 100%;
+    margin: 10px auto;
+    float: none;
+  }
 }/*# sourceMappingURL=index.css.map */
