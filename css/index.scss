@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.clear{clear: both;}
+
+header{
+    background-image: url('../img/bg.jpg');
+    min-height: 600px;
+    
+    .container{
+        max-width: 1280px;
+        padding: 0 2%;
+        margin: 0 auto;
+        .menu-topo{
+            .logo{
+                background-image: url('../img/logo.png');
+                background-size: 100% 100%;
+                float: left;
+                width: 132px;
+                height: 20px;
+            }
+            .desktop{
+                display: block;
+            }
+            .mobile{display: none;}
+        }
+
+    }
+}
