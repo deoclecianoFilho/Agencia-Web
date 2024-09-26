@@ -14,6 +14,9 @@
 header {
   background-image: url("../img/bg.jpg");
   min-height: 600px;
+  padding: 30px 0;
+  background-size: cover;
+  background-position: center;
 }
 header .container {
   max-width: 1280px;
@@ -28,8 +31,57 @@ header .container .menu-topo .logo {
   height: 20px;
 }
 header .container .menu-topo .desktop {
-  display: block;
+  float: right;
+}
+header .container .menu-topo .desktop ul li {
+  display: inline-block;
+  margin: 0 15px;
+  border-radius: 20px;
+}
+header .container .menu-topo .desktop ul li a {
+  color: white;
+}
+header .container .menu-topo .desktop ul .btn-nav {
+  padding: 3px 8px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 header .container .menu-topo .mobile {
   display: none;
+}
+header .container .chamada-header {
+  padding: 110px 0;
+}
+header .container .chamada-header h2 {
+  font-size: 47px;
+  color: white;
+  font-weight: normal;
+}
+header .container .chamada-header p {
+  font-size: 17px;
+  color: white;
+  margin-top: 10px;
+  max-width: 600px;
+}
+header .container .chamada-header form {
+  margin-top: 10px;
+}
+header .container .chamada-header form input[type=email] {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: white;
+  height: 35px;
+  width: 237px;
+  padding-left: 10px;
+  outline: 0;
+}
+header .container .chamada-header form input[type=submit] {
+  width: 181px;
+  height: 43px;
+  border-radius: 20px;
+  background-color: #ff5f27;
+  color: white;
+  cursor: pointer;
+  border: 0;
 }/*# sourceMappingURL=index.css.map */
