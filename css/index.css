@@ -32,11 +32,13 @@ header .container {
 header .container .menu-topo .logo {
   position: relative;
   z-index: 2;
-  background-image: url("../img/logo.png");
   background-size: 100% 100%;
   float: left;
   width: 132px;
   height: 20px;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
 }
 header .container .menu-topo .desktop {
   float: right;
@@ -52,13 +54,21 @@ header .container .menu-topo .desktop ul li {
   border-radius: 20px;
 }
 header .container .menu-topo .desktop ul li a {
+  padding: 5px;
   color: #fff;
+}
+header .container .menu-topo .desktop ul li :hover {
+  color: #ff5f27;
+  border-radius: 20px;
 }
 header .container .menu-topo .desktop ul .btn-nav {
   padding: 3px 8px;
   border: 1px solid #fff;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+}
+header .container .menu-topo .desktop ul .btn-nav:hover {
+  border: 1px solid #ff5f27;
 }
 header .container .menu-topo .mobile {
   float: right;
@@ -141,10 +151,15 @@ header .container .chamada-header form input[type=submit] {
   width: 181px;
   height: 43px;
   border-radius: 20px;
+  cursor: pointer;
   background-color: #ff5f27;
   color: #fff;
-  cursor: pointer;
   border: 0;
+}
+header .container .chamada-header form input[type=submit]:hover {
+  background-color: #fff;
+  color: #ff5f27;
+  border: 1px solid #ff5f27;
 }
 
 .descricao-danki {
@@ -379,15 +394,20 @@ header .container .chamada-header form input[type=submit] {
   outline: 0;
   width: 150px;
   height: 40px;
-  color: white;
   cursor: pointer;
   border: 0;
   margin-top: 10px;
   margin-left: 5%;
   border-radius: 40px;
+  color: white;
   background-color: #ff5f27;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
   font-size: 17px;
+}
+.formulario .container form input[type=submit]:hover {
+  color: #ff5f27;
+  background-color: white;
+  border: 1px solid #ff5f27;
 }
 
 footer {

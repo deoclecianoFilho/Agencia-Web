@@ -34,11 +34,14 @@ header {
             .logo {
                 position: relative;
                 z-index: 2;
-                background-image: url('../img/logo.png');
+                // background-image: url('../img/logo.png');
                 background-size: 100% 100%;
                 float: left;
                 width: 132px;
                 height: 20px;
+                color: white;
+                font-size: 28px;
+                font-weight: 600;
             }
 
             .desktop {
@@ -52,20 +55,26 @@ header {
                     li {
                         display: inline-block;
                         margin: 0 15px;
-
                         a {
+                            padding: 5px;
                             color: v.$one;
                         }
-
-                        // background-color: rgba($color: #000000, $alpha: 0.2);
+                        :hover{
+                            color: #ff5f27;
+                            border-radius: 20px;
+                        }
                         border-radius: 20px;
                     }
-
+                    
                     .btn-nav {
                         padding: 3px 8px;
                         border: 1px solid v.$one;
                         background-color: rgba($color: #000000, $alpha: 0.2);
                         border-radius: 20px;
+                        &:hover{
+                            border: 1px solid #ff5f27;
+
+                        }                        
                     }
                 }
             }
@@ -158,10 +167,16 @@ header {
                     width: 181px;
                     height: 43px;
                     border-radius: 20px;
+                    cursor: pointer;
                     background-color: v.$bg3;
                     color: v.$one;
-                    cursor: pointer;
                     border: 0;
+                    &:hover{
+                        background-color: v.$one;
+                        color: v.$bg3;
+                        border: 1px solid #ff5f27;
+                        
+                    }
 
                 }
             }
@@ -409,15 +424,21 @@ header {
                 outline: 0;
                 width: 150px;
                 height: 40px;
-                color: white;
                 cursor: pointer;
                 border: 0;
                 margin-top: 10px;
                 margin-left: 5%;
                 border-radius: 40px;
+                color: white;
                 background-color: #ff5f27;
                 box-shadow: 0 5px 10px 0 rgba($color: #000000, $alpha: 0.4);
                 font-size: 17px;
+                &:hover{
+                    color: #ff5f27;
+                    background-color: white;
+                    border: 1px solid #ff5f27;
+
+                }
 
             }
         }
