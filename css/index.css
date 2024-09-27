@@ -41,7 +41,7 @@ header .container .menu-topo .logo {
 header .container .menu-topo .desktop {
   float: right;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
   header .container .menu-topo .desktop {
     display: none;
   }
@@ -95,7 +95,7 @@ header .container .menu-topo .mobile ul .btn-nav {
   display: inline-block;
   padding: 4px 10px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
   header .container .menu-topo .mobile {
     display: block;
   }
@@ -103,7 +103,7 @@ header .container .menu-topo .mobile ul .btn-nav {
 header .container .chamada-header {
   padding: 110px 0;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
   header .container .chamada-header {
     text-align: center;
   }
@@ -132,7 +132,7 @@ header .container .chamada-header form input[type=email] {
   outline: 0;
   border: 0;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
   header .container .chamada-header form input[type=email] {
     margin-bottom: 10px;
   }
@@ -184,7 +184,7 @@ header .container .chamada-header form input[type=submit] {
   font-size: 15px;
   line-height: 25px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
   .descricao-danki2 .container .texto-descricao {
     width: 80%;
     margin: auto;
@@ -195,10 +195,119 @@ header .container .chamada-header form input[type=submit] {
   float: left;
   max-width: 500px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 960px) {
   .descricao-danki2 .container img {
     width: 100%;
     margin: 10px auto;
     float: none;
   }
+}
+
+.descricao-danki3 {
+  padding: 30px 0;
+}
+.descricao-danki3 .container {
+  max-width: 960px;
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  min-height: 350px;
+  position: relative;
+}
+.descricao-danki3 .container .box-depoimento {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  width: 70%;
+  max-width: 506px;
+  background-color: white;
+  padding: 10px 30px;
+  box-shadow: 0 8px 20px rgba(224, 224, 224, 0.5);
+}
+@media screen and (max-width: 960px) {
+  .descricao-danki3 .container .box-depoimento {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    left: 0;
+    bottom: -200px;
+  }
+}
+.descricao-danki3 .container .box-depoimento p {
+  font-size: 18px;
+  color: #31475e;
+}
+
+.servicos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.servicos .container .title-servicos {
+  display: flex;
+  justify-content: center;
+}
+.servicos .container .title-servicos h3 {
+  padding-top: 30px;
+  align-items: center;
+  color: #31475e;
+  font-size: 22px;
+  font-weight: normal;
+}
+@media screen and (max-width: 500px) {
+  .servicos .container .title-servicos h3 {
+    padding-top: 70px;
+  }
+}
+.servicos .space-servico {
+  width: 33%;
+  display: inline-block;
+}
+@media screen and (max-width: 960px) {
+  .servicos .space-servico {
+    width: 49%;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .servicos .space-servico {
+    align-items: center;
+    width: 90%;
+    margin: 20px 5%;
+  }
+}
+.servicos .space-servico .box-servico {
+  width: 95%;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  background: white;
+}
+.servicos .space-servico .box-servico img {
+  width: 100%;
+}
+.servicos .space-servico .box-servico .box-servico-wraper {
+  padding: 20px;
+}
+.servicos .space-servico .box-servico .box-servico-wraper h2 {
+  color: #31475e;
+  font-size: 20px;
+  font-weight: normal;
+}
+.servicos .space-servico .box-servico .box-servico-wraper p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-weight: lighter;
+  color: #6a7c5e;
+  font-size: 15px;
+}
+.servicos .space-servico .box-servico .box-servico-wraper a {
+  color: #6a7c5e;
+  display: inline-block;
+  border: 1px solid #6a7c5e;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 6px 12px;
+  border-radius: 15px;
 }/*# sourceMappingURL=index.css.map */

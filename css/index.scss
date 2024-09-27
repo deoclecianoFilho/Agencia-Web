@@ -1,7 +1,7 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,25 +10,28 @@
     list-style-type: none;
 }
 
-.container{
+.container {
     @include m.container
 }
 
-.clear{clear: both;}
+.clear {
+    clear: both;
+}
 
-header{
+header {
     background-image: url('../img/bg.jpg');
     min-height: 600px;
     padding: 30px 0;
     background-size: cover;
     background-position: center;
-    
-    .container{
+
+    .container {
         max-width: 1280px;
         padding: 0 2%;
         margin: 0 auto;
-        .menu-topo{
-            .logo{
+
+        .menu-topo {
+            .logo {
                 position: relative;
                 z-index: 2;
                 background-image: url('../img/logo.png');
@@ -37,20 +40,28 @@ header{
                 width: 132px;
                 height: 20px;
             }
-            .desktop{
-                @include m.mobile2{
+
+            .desktop {
+                @include m.mobile2 {
                     display: none;
                 }
+
                 float: right;
-                ul{
-                    li{
+
+                ul {
+                    li {
                         display: inline-block;
                         margin: 0 15px;
-                        a{color: v.$one;}
+
+                        a {
+                            color: v.$one;
+                        }
+
                         // background-color: rgba($color: #000000, $alpha: 0.2);
                         border-radius: 20px;
                     }
-                    .btn-nav{
+
+                    .btn-nav {
                         padding: 3px 8px;
                         border: 1px solid v.$one;
                         background-color: rgba($color: #000000, $alpha: 0.2);
@@ -58,17 +69,20 @@ header{
                     }
                 }
             }
-            .mobile{
+
+            .mobile {
                 float: right;
                 display: none;
-                h3{
+
+                h3 {
                     position: relative;
                     z-index: 2;
                     color: v.$one;
                     cursor: pointer;
                     font-size: 26px;
                 }
-                ul{
+
+                ul {
                     position: absolute;
                     left: 0;
                     width: 100%;
@@ -77,14 +91,17 @@ header{
                     background-color: v.$bg4;
                     display: none;
                     text-align: center;
-                    li{
+
+                    li {
                         padding: 10px 0;
-                        a{
+
+                        a {
                             display: block;
                             color: v.$one;
                         }
                     }
-                    .btn-nav{
+
+                    .btn-nav {
                         border: 1px solid v.$one;
                         background-color: rgba($color: #000000, $alpha: 0.2);
                         border-radius: 20px;
@@ -92,31 +109,37 @@ header{
                         padding: 4px 10px;
                     }
                 }
-                @include m.mobile2{
+
+                @include m.mobile2 {
                     display: block;
                 }
             }
         }
 
-        .chamada-header{
-            @include m.mobile2{
+        .chamada-header {
+            @include m.mobile2 {
                 text-align: center;
             }
+
             padding: 110px 0;
-            h2{
+
+            h2 {
                 font-size: 47px;
                 color: v.$one;
                 font-weight: normal;
             }
-            p{
+
+            p {
                 font-size: 17px;
                 color: v.$one;
                 margin-top: 10px;
                 max-width: 600px;
             }
-            form{
+
+            form {
                 margin-top: 10px;
-                input[type=email]{
+
+                input[type=email] {
                     display: inline-block;
                     border-radius: 20px;
                     background-color: v.$bg2;
@@ -125,11 +148,13 @@ header{
                     padding-left: 10px;
                     outline: 0;
                     border: 0;
-                    @include m.mobile2{
+
+                    @include m.mobile2 {
                         margin-bottom: 10px;
                     }
                 }
-                input[type=submit]{
+
+                input[type=submit] {
                     width: 181px;
                     height: 43px;
                     border-radius: 20px;
@@ -144,11 +169,13 @@ header{
 
     }
 }
-.descricao-danki{
+
+.descricao-danki {
     text-align: center;
     padding: 30px 0;
-    .container{
-        p{
+
+    .container {
+        p {
             display: inline-block;
             max-width: 600px;
             font-weight: lighter;
@@ -157,51 +184,159 @@ header{
         }
     }
 }
-.descricao-danki2{
+
+.descricao-danki2 {
     padding: 50px 0;
-    .container{
+
+    .container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         max-width: 960px;
-        .texto-descricao{
+
+        .texto-descricao {
             float: left;
             width: 40%;
-            h3{
+
+            h3 {
                 color: v.$text2;
                 font-size: 22px;
                 line-height: 32px;
                 font-weight: normal;
             }
-            p{
+
+            p {
                 margin-top: 15px;
                 color: v.$text3;
                 font-size: 15px;
                 line-height: 25px;
             }
-            @include m.mobile2{
+
+            @include m.mobile2 {
                 width: 80%;
                 margin: auto;
             }
         }
-        img{
+
+        img {
             width: 60%;
             float: left;
             max-width: 500px;
-            @include m.mobile2{
+
+            @include m.mobile2 {
                 width: 100%;
-                margin:10px auto;
+                margin: 10px auto;
                 float: none;
             }
         }
     }
 }
-.descricao-danki3{
-    .container{
-        .box-depoimento{
-            p{
 
+.descricao-danki3 {
+    padding: 30px 0;
+
+    .container {
+        max-width: 960px;
+        background-image: url('../img/bg2.jpg');
+        background-size: cover;
+        min-height: 350px;
+        position: relative;
+
+        .box-depoimento {
+            @include m.mobile2 {
+                width: 90%;
+                margin: 10px auto;
+                position: relative;
+                left: 0;
+                bottom: -200px;
+            }
+
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            width: 70%;
+            max-width: 506px;
+            background-color: white;
+            padding: 10px 30px;
+            box-shadow: 0 8px 20px rgba(224, 224, 224, 0.5);
+
+            p {
+                font-size: 18px;
+                color: v.$text2;
             }
         }
+    }
+}
+.servicos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // background-color: rebeccapurple;
+    .container{
+        .title-servicos{
+            display: flex;
+            justify-content: center;
+            h3{
+                @include m.mobile1 {
+                    padding-top: 70px;
+                }
+                padding-top: 30px;
+                align-items: center;
+                color: #31475e;
+                font-size: 22px;
+                font-weight: normal;
+            }
+        }
+    }
+    .space-servico{
+        @include m.mobile2 {
+            width: 49%;
+            margin:10px auto;
+        }
+        @include m.mobile1 {
+            align-items: center;
+            width: 90%;
+            margin:20px 5%;
+        }
+        // background-color: red;
+        width: 33%;
+        display: inline-block;
+        .box-servico{
+            width: 95%;
+            margin: 10px auto;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 20px 0 rgba($color: #000000, $alpha: 0.5);
+            background: white;
+            img{
+                width: 100%;
+            }
+            .box-servico-wraper{
+                padding: 20px;
+                h2{
+                    color: #31475e;
+                    font-size: 20px;
+                    font-weight: normal;
+                }
+                p{
+                    margin: 8px 0;
+                    line-height: 1.6;
+                    font-weight: lighter;
+                    color: #6a7c5e;
+                    font-size: 15px;
+                }
+                a{
+                    color: #6a7c5e;
+                    display: inline-block;
+                    border: 1px solid #6a7c5e;
+                    font-weight: lighter;
+                    font-size: 15px;
+                    padding: 6px 12px;
+                    border-radius: 15px;
+                }
+            }
+        }
+
     }
 }
