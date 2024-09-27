@@ -310,4 +310,130 @@ header .container .chamada-header form input[type=submit] {
   font-size: 15px;
   padding: 6px 12px;
   border-radius: 15px;
+}
+
+.portfolio .container {
+  max-width: 960px;
+  padding: 15px 0;
+  background: #f7f7f7;
+}
+.portfolio .container h2 {
+  text-align: center;
+  font-weight: normal;
+  color: #31475e;
+}
+.portfolio .container .empresas {
+  padding: 0 10px;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio .container .empresas .empresa-single {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-color: #ececec;
+  border-width: 1px 0 1px 1px;
+  width: 25%;
+  padding: 10px 0;
+}
+@media screen and (max-width: 500px) {
+  .portfolio .container .empresas .empresa-single {
+    width: 80%;
+  }
+}
+
+.formulario .container {
+  max-width: 960px;
+}
+.formulario .container h2 {
+  text-align: center;
+  font-weight: normal;
+  color: #31475e;
+}
+.formulario .container form {
+  margin-top: 10px;
+}
+.formulario .container form input[type=text] {
+  width: 90%;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid #ebebeb;
+  outline: none;
+  padding: 10px 10px;
+  margin-top: 10px;
+  margin: 10px 5%;
+}
+.formulario .container form textarea {
+  width: 90%;
+  height: 120px;
+  resize: vertical;
+  margin: 10px 5%;
+  border-radius: 20px;
+  border: 1px solid #ebebeb;
+  outline: none;
+  padding: 10px 10px;
+}
+.formulario .container form input[type=submit] {
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  margin-top: 10px;
+  margin-left: 5%;
+  border-radius: 40px;
+  background-color: #ff5f27;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+  font-size: 17px;
+}
+
+footer {
+  margin: 50px 0;
+}
+footer .container .box-footer {
+  float: left;
+  width: 33%;
+  padding: 0 15px;
+}
+@media screen and (max-width: 960px) {
+  footer .container .box-footer {
+    margin: 20px 5%;
+    width: 90%;
+  }
+}
+footer .container .box-footer h2 {
+  color: #31475e;
+  font-size: 22px;
+  font-weight: normal;
+}
+footer .container .box-footer p {
+  margin-top: 10px;
+  color: #31475e;
+  font-weight: 300;
+  font-size: 15px;
+}
+footer .container form {
+  margin-top: 10px;
+}
+footer .container form input[type=text] {
+  max-width: 208;
+  height: 43px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: solid 1px #bfbfbf;
+  padding-left: 10px;
+  outline: 0;
+}
+footer .container form button {
+  width: 63px;
+  height: 43px;
+  border: 1px solid #31475e;
+  border-radius: 20px;
+  background-color: white;
+}
+footer .container form button i {
+  color: #31475e;
 }/*# sourceMappingURL=index.css.map */

@@ -340,3 +340,132 @@ header {
 
     }
 }
+
+.portfolio{
+    .container{
+        max-width: 960px;
+        padding: 15px 0;
+        background: #f7f7f7;
+        h2{
+            text-align: center;
+            font-weight: normal;
+            color: #31475e;
+        }
+        .empresas{
+            padding: 0 10px;
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            .empresa-single{
+                @include m.mobile1 {
+                    width: 80%;
+
+                }
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-style: solid;
+                border-color: #ececec;
+                border-width: 1px 0 1px 1px;
+                width: 25%;
+                padding: 10px 0;
+                
+            }
+        }
+    }
+}
+
+.formulario{
+    .container{
+        max-width: 960px;
+        h2{
+            text-align: center;
+            font-weight: normal;
+            color: #31475e;
+        }
+        form{
+            margin-top: 10px;
+            input[type=text]{
+                width: 90%;
+                height: 40px;
+                border-radius: 100px;
+                border: 1px solid #ebebeb;
+                outline: none;
+                padding: 10px 10px;
+                margin-top: 10px;
+                margin: 10px 5%;
+            }
+            textarea{
+                width: 90%;
+                height: 120px;
+                resize: vertical;
+                margin: 10px 5%;
+                border-radius: 20px;
+                border: 1px solid #ebebeb;
+                outline: none;
+                padding: 10px 10px;
+            }
+            input[type=submit]{
+                outline: 0;
+                width: 150px;
+                height: 40px;
+                color: white;
+                cursor: pointer;
+                border: 0;
+                margin-top: 10px;
+                margin-left: 5%;
+                border-radius: 40px;
+                background-color: #ff5f27;
+                box-shadow: 0 5px 10px 0 rgba($color: #000000, $alpha: 0.4);
+                font-size: 17px;
+
+            }
+        }
+    }
+}footer{
+    margin: 50px 0;
+    .container{
+        .box-footer{
+            @include m.mobile2 {
+                margin: 20px 5%;
+                width: 90%;
+            }
+            float: left;
+            width: 33%;
+            padding: 0 15px;
+            h2{
+                color: #31475e;
+                font-size: 22px;
+                font-weight: normal;
+            }
+            p{
+                margin-top: 10px;
+                color: #31475e;
+                font-weight: 300;
+                font-size: 15px;
+            }
+        }
+        form{
+            margin-top: 10px;
+            input[type=text]{
+                max-width: 208;
+                height: 43px;
+                border-radius: 20px;
+                background-color: #ffffff;
+                border: solid 1px #bfbfbf;
+                padding-left: 10px;
+                outline: 0;
+            }
+            button{
+                width: 63px;
+                height: 43px;
+                border: 1px solid #31475e;
+                border-radius: 20px;
+                background-color: white;
+                i{
+                    color: #31475e;
+                }
+            }
+        }
+    }
+}
